@@ -1,0 +1,19 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/api/Product",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 8080
+          }
+        ],
+        "UpstreamPathTemplate": "/product-api/product",
+        "UpstreamHttpMethod": ["GET"],
+        "RouteIsCaseSensitive": false,
+        "DownstreamHttpVersion": "2.0",
+        "DangerousAcceptAnyServerCertificate": false
+      }
+    ]
+  }
